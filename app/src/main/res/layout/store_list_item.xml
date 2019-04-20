@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+     <ImageView
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+         android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/storename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가게이름"
+
+            />
+        <TextView
+            android:id="@+id/storeaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가게주소"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/storeopentime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여는시간"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="~"/>
+            <TextView
+                android:id="@+id/storeclosetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="닫는시간"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화걸기"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>
